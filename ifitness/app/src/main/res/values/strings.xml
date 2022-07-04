@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">IFitness</string>
+
+    <string-array name="items">
+        <item>Escolha um item</item>
+        <item>Corrida</item>
+        <item>Natação</item>
+        <item>Ciclismo</item>
+        <item>Outro</item>
+    </string-array>
+
+</resources>

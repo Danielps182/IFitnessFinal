@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RankActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#808080"
+            android:elevation="4dp"/>
+
+
+        <TextView
+            android:id="@+id/totalPlayeAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total percorrido por todos os jogadores: 0"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/bestPlayers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Os melhores jogadores"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/firstPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Primeiro lugar"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/first_place"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/secondPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Segundo lugar"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/second_place"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/thirdPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Terceiro lugar"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/third_place"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/allPlayersRanking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Todos as posicoes"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="10dp"/>
+    <ListView
+        android:padding="10dp"
+        android:id="@+id/scoreList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+    </LinearLayout>
+</LinearLayout>
